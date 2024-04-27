@@ -13,22 +13,22 @@
 
     <!-- Topbar Start -->
     <div id="callToAction" class="container-fluid bg-light px-0 wow fadeIn" data-wow-delay="0.1s">
-        <div class="row gx-0 align-items-center d-none d-lg-flex">
-            <div class="col-lg-8 px-5 text-start">
-                <ol class="breadcrumb mb-0">
+        <div class="row gx-0 align-items-center d-flex">
+            <div class="col-md-8 px-5 text-start">
+                <ol class="breadcrumb mb-0 left">
                     <li class="small">
                         <i class="fa-solid fa-phone-volume"></i> 01942034788
                     </li>
                     <li class="small">
                         <i class="fa-solid fa-envelope"></i> support@mminfotech.com
                     </li>
-                    <li class="small">
+                    <li class="small d-none d-lg-flex">
                         <i class="fa-solid fa-location-dot"></i> 106, West Baniakhamar, Khulna, Bangladesh
                     </li>
                 </ol>
             </div>
-            <div class="col-lg-4 px-5 text-end">
-                <div class="h-100 d-inline-flex align-items-center">
+            <div class="col-md-4 px-5 text-end right">
+                <div class="h-100 d-flex align-items-center inner_right">
                     <a class="btn-square text-primary border-end rounded-0" href=""><i class="fab fa-facebook-f"></i></a>
                     <a class="btn-square text-primary border-end rounded-0" href=""><i class="fab fa-twitter"></i></a>
                     <a class="btn-square text-primary border-end rounded-0" href=""><i class="fab fa-linkedin-in"></i></a>

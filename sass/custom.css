@@ -3,4 +3,10 @@
 }
 #callToAction ol li svg {
   margin-right: 5px;
+}
+
+@media (max-width: 767.98px) {
+  #callToAction .left, #callToAction .inner_right {
+    justify-content: center !important;
+  }
 }/*# sourceMappingURL=custom.css.map */
