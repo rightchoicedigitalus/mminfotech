@@ -17,22 +17,22 @@
             <div class="col-md-8 px-5 text-start">
                 <ol class="breadcrumb mb-0 left">
                     <li class="small">
-                        <i class="fa-solid fa-phone-volume"></i> 01942034788
+                        <i class="fa-solid fa-phone-volume"></i> <?php echo get_theme_mod('mm_phone'); ?>
                     </li>
                     <li class="small">
-                        <i class="fa-solid fa-envelope"></i> support@mminfotech.com
+                        <i class="fa-solid fa-envelope"></i> <?php echo get_theme_mod('mm_email'); ?>
                     </li>
                     <li class="small d-none d-lg-flex">
-                        <i class="fa-solid fa-location-dot"></i> 106, West Baniakhamar, Khulna, Bangladesh
+                        <i class="fa-solid fa-location-dot"></i> <?php echo get_theme_mod('mm_address'); ?>
                     </li>
                 </ol>
             </div>
             <div class="col-md-4 px-5 text-end right">
                 <div class="h-100 d-flex align-items-center inner_right">
-                    <a class="btn-square text-primary border-end rounded-0" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn-square text-primary border-end rounded-0" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn-square text-primary border-end rounded-0" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn-square text-primary pe-0" href=""><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" class="btn-square text-primary border-end rounded-0" href="<?php echo get_theme_mod('mm_facebook'); ?>"><i class="fab fa-facebook-f"></i></a>
+                    <a target="_blank" class="btn-square text-primary border-end rounded-0" href="<?php echo get_theme_mod('mm_twitter'); ?>"><i class="fab fa-twitter"></i></a>
+                    <a target="_blank" class="btn-square text-primary border-end rounded-0" href="<?php echo get_theme_mod('mm_instagram'); ?>"><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" class="btn-square text-primary border-end rounded-0" href="<?php echo get_theme_mod('mm_linkedin'); ?>"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
@@ -50,23 +50,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-            <div class="navbar-nav me-auto p-3 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About Us</a>
-                <a href="service.html" class="nav-item nav-link">Services</a>
-                <a href="project.html" class="nav-item nav-link">Projects</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu border-0 rounded-0 rounded-bottom m-0">
-                        <a href="feature.html" class="dropdown-item">Features</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
-            </div>
-            <!-- <a href="https://htmlcodex.com/web-design-agency-html-template-pro" class="btn btn-sm btn-light rounded-pill py-2 px-4 d-none d-lg-block">Md. Reza</a> -->
+            
         </div>
     </nav>
     <!-- Navbar End -->

@@ -1,8 +1,28 @@
+:root {
+  --primary: #109806;
+  --secondary: #ffffff;
+  --light: #F8F8F8;
+  --dark: #252525;
+}
+
 #callToAction ol li:not(:last-child) {
   margin-right: 15px;
 }
 #callToAction ol li svg {
   margin-right: 5px;
+}
+
+.navbar {
+  background: var(--primary);
+}
+.navbar .dropdown-menu {
+  background: var(--primary);
+}
+.navbar .dropdown-menu a {
+  color: var(--secondary);
+}
+.navbar .dropdown-menu a:hover {
+  color: var(--dark);
 }
 
 @media (max-width: 767.98px) {

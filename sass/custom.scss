@@ -1,4 +1,10 @@
 
+:root {
+    --primary: #109806;
+    --secondary: #ffffff;
+    --light: #F8F8F8;
+    --dark: #252525;
+}
 
 
 // Call To Action
@@ -11,6 +17,20 @@
             svg {
                 margin-right: 5px;
             }
+        }
+    }
+}
+
+// Navbar
+.navbar {
+    background: var(--primary);
+    .dropdown-menu {
+        background: var(--primary);
+        a {
+            color: var(--secondary);
+        }
+        a:hover {
+            color: var(--dark);
         }
     }
 }
