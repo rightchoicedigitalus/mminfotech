@@ -20,10 +20,10 @@
                         <i class="fa-solid fa-phone-volume"></i> 01942034788
                     </li>
                     <li class="small">
-                        <i class="fa-solid fa-phone-volume"></i> support@mminfotech.com
+                        <i class="fa-solid fa-envelope"></i> support@mminfotech.com
                     </li>
                     <li class="small">
-                        <i class="fa-solid fa-phone-volume"></i> 106, West Baniakhamar, Khulna, Bangladesh
+                        <i class="fa-solid fa-location-dot"></i> 106, West Baniakhamar, Khulna, Bangladesh
                     </li>
                 </ol>
             </div>
