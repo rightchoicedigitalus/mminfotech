@@ -593,9 +593,6 @@
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-lg-square back-to-top"><i class="fa fa-solid fa-angle-up"></i></a>
 
-</body>
-
-</html>
 
 
 <?php
