@@ -1,0 +1,16 @@
+
+
+
+// Call To Action
+#callToAction {
+    ol {
+        li:not(:last-child) {
+            margin-right: 15px;
+        }
+        li {
+            svg {
+                margin-right: 5px;
+            }
+        }
+    }
+}
