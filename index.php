@@ -61,40 +61,40 @@
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
-                    <img class="img-fluid" src="img/carousel-1.jpg" alt="Image">
+                    <img class="img-fluid" src="<?php echo get_theme_mod('home_slider_image_one');?>" alt="Image">
                 </button>
                 <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="1" aria-label="Slide 2">
-                    <img class="img-fluid" src="img/carousel-2.jpg" alt="Image">
+                    <img class="img-fluid" src="<?php echo get_theme_mod('home_slider_image_two');?>" alt="Image">
                 </button>
                 <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="2" aria-label="Slide 3">
-                    <img class="img-fluid" src="img/carousel-3.jpg" alt="Image">
+                    <img class="img-fluid" src="<?php echo get_theme_mod('home_slider_image_three');?>" alt="Image">
                 </button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <img class="w-100" src="<?php echo get_theme_mod('home_slider_image_one');?>" alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase mb-4 animated zoomIn">We Are Leader In</h4>
-                            <h1 class="display-1 text-white mb-0 animated zoomIn">Creative & Innovative Digital Solution</h1>
+                            <h4 class="text-white text-uppercase mb-4 animated zoomIn"><?php echo get_theme_mod('slider_description_one');?></h4>
+                            <h1 class="display-1 text-white mb-0 animated zoomIn"><?php echo get_theme_mod('slider_heading_one');?></h1>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <img class="w-100" src="<?php echo get_theme_mod('home_slider_image_two');?>" alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase mb-4 animated zoomIn">We Are Leader In</h4>
-                            <h1 class="display-1 text-white mb-0 animated zoomIn">Creative & Innovative Digital Solution</h1>
+                            <h4 class="text-white text-uppercase mb-4 animated zoomIn"><?php echo get_theme_mod('slider_description_two');?></h4>
+                            <h1 class="display-1 text-white mb-0 animated zoomIn"><?php echo get_theme_mod('slider_heading_two');?></h1>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-3.jpg" alt="Image">
+                    <img class="w-100" src="<?php echo get_theme_mod('home_slider_image_three');?>" alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase mb-4 animated zoomIn">We Are Leader In</h4>
-                            <h1 class="display-1 text-white mb-0 animated zoomIn">Creative & Innovative Digital Solution</h1>
+                            <h4 class="text-white text-uppercase mb-4 animated zoomIn"><?php echo get_theme_mod('slider_description_three');?></h4>
+                            <h1 class="display-1 text-white mb-0 animated zoomIn"><?php echo get_theme_mod('slider_heading_three');?></h1>
                         </div>
                     </div>
                 </div>
