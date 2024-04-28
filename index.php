@@ -49,7 +49,7 @@
         <button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+        <div class="collapse right_menu navbar-collapse justify-content-end" id="navbarCollapse">
             <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_class' => 'navbar-nav')); ?>
         </div>
     </nav>
