@@ -7,3 +7,4 @@ include_once('inc/enqueque.php');
 include_once('inc/theme_function.php');
 
 // Register Nav Menu
+register_nav_menu('primary', __('Primary Menu', 'mminfotech'));
