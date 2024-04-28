@@ -1,5 +1,8 @@
 <?php
 
+// Default Teheme Function
+include_once('inc/default.php');
+
 // Theme CSS and jQuery File Calling
 include_once('inc/enqueque.php');
 

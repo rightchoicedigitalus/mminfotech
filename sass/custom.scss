@@ -24,6 +24,12 @@
 // Navbar
 .navbar {
     background: var(--primary);
+    .navbar-brand {
+        img {
+            width: 100px;
+            height: auto;
+        }
+    }
     .dropdown-menu {
         background: var(--primary);
         a {

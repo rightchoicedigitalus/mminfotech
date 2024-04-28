@@ -15,6 +15,10 @@
 .navbar {
   background: var(--primary);
 }
+.navbar .navbar-brand img {
+  width: 100px;
+  height: auto;
+}
 .navbar .dropdown-menu {
   background: var(--primary);
 }

@@ -1,6 +1,23 @@
 <?php
 function header_area_register($wp_customize){
 
+    // =========== Header Area ===========
+    $wp_customize->add_section('mm_header_area', array(
+        'title' =>__('Header Area', 'mminfotech'),
+        'description' => 'You can change your Header from here'
+    ));
+
+    // Header Logo
+    $wp_customize->add_setting('header_logo', array(
+        'default' => get_bloginfo('template_directory').'/img/mylogo1.png',
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'header_logo', array(
+        'label' => 'Site Logo',
+        'setting' => 'header_logo',
+        'section' => 'mm_header_area'
+    )));
+
     // =========== Call To Action ===========
     $wp_customize->add_section('mm_call_to_action', array(
         'title' =>__('Call To Action', 'mminfotech'),
