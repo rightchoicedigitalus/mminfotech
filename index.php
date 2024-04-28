@@ -12,29 +12,27 @@
 
 
     <!-- Topbar / Call To Action Start -->
-    <div id="callToAction" class="bg-light wow fadeIn" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row align-items-center justify-content-between d-flex">
-                <div class="col-md-8 text-start">
-                    <ol class="breadcrumb mb-0 left">
-                        <li class="small">
-                            <i class="fa-solid fa-phone-volume"></i> <?php echo get_theme_mod('mm_phone'); ?>
-                        </li>
-                        <li class="small">
-                            <i class="fa-solid fa-envelope"></i> <?php echo get_theme_mod('mm_email'); ?>
-                        </li>
-                        <li class="small d-none d-lg-flex">
-                            <i class="fa-solid fa-location-dot"></i> <?php echo get_theme_mod('mm_address'); ?>
-                        </li>
-                    </ol>
-                </div>
-                <div class="col-md-4 px-5 text-end right">
-                    <div class="h-100 d-flex align-items-center inner_right">
-                        <a target="_blank" class="btn-square text-primary border-end rounded-0" href="<?php echo get_theme_mod('mm_facebook'); ?>"><i class="fab fa-facebook-f"></i></a>
-                        <a target="_blank" class="btn-square text-primary border-end rounded-0" href="<?php echo get_theme_mod('mm_twitter'); ?>"><i class="fab fa-twitter"></i></a>
-                        <a target="_blank" class="btn-square text-primary border-end rounded-0" href="<?php echo get_theme_mod('mm_instagram'); ?>"><i class="fab fa-instagram"></i></a>
-                        <a target="_blank" class="btn-square text-primary border-end rounded-0" href="<?php echo get_theme_mod('mm_linkedin'); ?>"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+    <div id="callToAction" class="container-fluid bg-light px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 align-items-center d-flex">
+            <div class="col-md-8 px-5 text-start">
+                <ol class="breadcrumb mb-0 left">
+                    <li class="small">
+                        <i class="fa-solid fa-phone-volume"></i> <?php echo get_theme_mod('mm_phone'); ?>
+                    </li>
+                    <li class="small">
+                        <i class="fa-solid fa-envelope"></i> <?php echo get_theme_mod('mm_email'); ?>
+                    </li>
+                    <li class="small d-none d-lg-flex">
+                        <i class="fa-solid fa-location-dot"></i> <?php echo get_theme_mod('mm_address'); ?>
+                    </li>
+                </ol>
+            </div>
+            <div class="col-md-4 px-5 text-end right">
+                <div class="h-100 d-flex align-items-center inner_right">
+                    <a target="_blank" class="btn-square text-primary border-end rounded-0" href="<?php echo get_theme_mod('mm_facebook'); ?>"><i class="fab fa-facebook-f"></i></a>
+                    <a target="_blank" class="btn-square text-primary border-end rounded-0" href="<?php echo get_theme_mod('mm_twitter'); ?>"><i class="fab fa-twitter"></i></a>
+                    <a target="_blank" class="btn-square text-primary border-end rounded-0" href="<?php echo get_theme_mod('mm_instagram'); ?>"><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" class="btn-square text-primary border-end rounded-0" href="<?php echo get_theme_mod('mm_linkedin'); ?>"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
