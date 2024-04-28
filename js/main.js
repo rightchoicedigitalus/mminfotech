@@ -116,7 +116,10 @@ jQuery(document).ready(function(){
     jQuery('.navbar .navbar-nav .nav-item a').addClass('nav-link');
     jQuery('.menu-item-has-children').addClass('dropdown');
     jQuery('.dropdown .nav-link').addClass('dropdown-toggle');
+    jQuery('.sub-menu li').removeClass('nav-item');
     jQuery('.sub-menu li a').removeClass('dropdown-toggle');
+    jQuery('.sub-menu li a').removeClass('nav-link');
+    jQuery('.sub-menu li a').addClass('dropdown-item');
     jQuery('.sub-menu').addClass('dropdown-menu');
     jQuery('.collapse.right_menu .dropdown-menu').addClass('dropdown-menu-end');
     jQuery('.dropdown-toggle').attr('data-bs-toggle', 'dropdown');
