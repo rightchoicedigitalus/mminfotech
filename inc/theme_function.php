@@ -18,6 +18,28 @@ function header_area_register($wp_customize){
         'section' => 'mm_header_area'
     )));
 
+    // Menu Position
+    $wp_customize->add_section('menu_position', array(
+        'title' =>__('Menu Position', 'mminfotech'),
+        'description' => 'You can change menu position from here'
+    ));
+
+    $wp_customize->add_setting('menu_position_change', array(
+        'default' => 'right_menu',
+    ));
+
+    $wp_customize->add_control('menu_position_change', array(
+        'label' => 'Menu Position',
+        'setting' => 'menu_position_change',
+        'section' => 'menu_position',
+        'type' => 'radio',
+        'choices' => array(
+            'left_menu' => 'Left Menu',
+            'right_menu' => 'Right Menu',
+            'center_menu' => 'Center Menu',
+        ),
+    ));
+
     // =========== Call To Action ===========
     $wp_customize->add_section('mm_call_to_action', array(
         'title' =>__('Call To Action', 'mminfotech'),

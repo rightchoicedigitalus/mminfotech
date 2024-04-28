@@ -30,6 +30,12 @@
             height: auto;
         }
     }
+    .collapse.right_menu {
+        justify-content: end;
+    }
+    .collapse.center_menu {
+        justify-content: center;
+    }
     .dropdown-menu {
         background: var(--primary);
         a {

@@ -19,6 +19,12 @@
   width: 100px;
   height: auto;
 }
+.navbar .collapse.right_menu {
+  justify-content: end;
+}
+.navbar .collapse.center_menu {
+  justify-content: center;
+}
 .navbar .dropdown-menu {
   background: var(--primary);
 }
