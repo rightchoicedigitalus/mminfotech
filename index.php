@@ -28,7 +28,7 @@
                 </ol>
             </div>
             <div class="col-md-4 px-5 text-end right">
-                <div class="h-100 d-flex align-items-center inner_right">
+                <div class="h-100 d-flex align-items-center inner_right justify-content-end">
                     <a target="_blank" class="btn-square text-primary border-end rounded-0" href="<?php echo get_theme_mod('mm_facebook'); ?>"><i class="fab fa-facebook-f"></i></a>
                     <a target="_blank" class="btn-square text-primary border-end rounded-0" href="<?php echo get_theme_mod('mm_twitter'); ?>"><i class="fab fa-twitter"></i></a>
                     <a target="_blank" class="btn-square text-primary border-end rounded-0" href="<?php echo get_theme_mod('mm_instagram'); ?>"><i class="fab fa-instagram"></i></a>
