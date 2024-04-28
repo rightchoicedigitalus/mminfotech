@@ -230,6 +230,56 @@ function header_area_register($wp_customize){
         'setting' => 'mm_twitter',
         'section' => 'mm_call_to_action',
     ));
+
+    // =========== Counter Up ===========
+    $wp_customize->add_section('mm_counter_up', array(
+        'title' =>__('Counter Up', 'mminfotech'),
+        'description' => 'You can change your counter value from here'
+    ));
+
+    // Experience
+    $wp_customize->add_setting('mm_experience', array(
+        'default' => '1234',
+    ));
+
+    $wp_customize->add_control('mm_experience', array(
+        'label' => 'Years of Experience',
+        'setting' => 'mm_experience',
+        'section' => 'mm_counter_up',
+    ));
+
+    // Team Members
+    $wp_customize->add_setting('mm_team_members', array(
+        'default' => '1234',
+    ));
+
+    $wp_customize->add_control('mm_team_members', array(
+        'label' => 'Team Members',
+        'setting' => 'mm_team_members',
+        'section' => 'mm_counter_up',
+    ));
+
+    // Satisfied Clients
+    $wp_customize->add_setting('mm_clients', array(
+        'default' => '1234',
+    ));
+
+    $wp_customize->add_control('mm_clients', array(
+        'label' => 'Satisfied Clients',
+        'setting' => 'mm_clients',
+        'section' => 'mm_counter_up',
+    ));
+
+    // Projects Done
+    $wp_customize->add_setting('mm_projects_done', array(
+        'default' => '1234',
+    ));
+
+    $wp_customize->add_control('mm_projects_done', array(
+        'label' => 'Projects Done',
+        'setting' => 'mm_projects_done',
+        'section' => 'mm_counter_up',
+    ));
     
 }
 add_action('customize_register', 'header_area_register');
