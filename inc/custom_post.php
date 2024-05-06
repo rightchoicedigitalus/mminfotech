@@ -27,5 +27,17 @@ function custom_slider(){
         )
       );
       add_theme_support('post-thumbnails');
+
+      
+
+      add_image_size('post-thumbnails', 1900, 500, true);
+      
+      // $file = 'post-thumbnails'; // Specify the path to your image file
+      // $max_width = 1000; // Maximum width for the resized image
+      // $max_height = 300; // Maximum height for the resized image
+      // $crop = true; // Whether to crop the image to fit exactly within the specified dimensions (true/false)
+
+      // // Resize the image
+      // image_resize($file, $max_width, $max_height, $crop);
   }
   add_action('init', 'custom_slider');
