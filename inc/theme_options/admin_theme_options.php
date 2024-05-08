@@ -7,7 +7,7 @@ function mm_add_theme_page() {
 
 
     // Sub Menu
-    add_submenu_page( 'mm_theme_option', 'Theme Option', 'General', 'manage_options', 'mm_theme_option', 'mm_theme_create_page', );
+    add_submenu_page( 'mm_theme_option', 'Theme Option', 'Section Header', 'manage_options', 'mm_theme_option', 'mm_theme_create_page', );
 
     add_submenu_page( 'mm_theme_option', 'Theme Custom CSS', 'Custom CSS', 'manage_options', 'mm_custom_css', 'mm_theme_custom_css_page', );
     // add_submenu_page( $parent_slug:string, $page_title:string, $menu_title:string, $capability:string, $menu_slug:string, $callback:callable, $position:integer|float|null );
@@ -19,7 +19,7 @@ add_action('admin_menu', 'mm_add_theme_page');
 
 // Main Menu
 function mm_theme_create_page() {
-    require_once('general.php');
+    require_once('section_header.php');
 
 };
 

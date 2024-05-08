@@ -174,111 +174,35 @@ function header_area_register($wp_customize){
     ));
     
 
-
-    // =========== About Us ===========
-    $wp_customize->add_section('mm_about_us', array(
-        'title' =>__('About Us', 'mminfotech'),
+    // =========== Section Images ===========
+    $wp_customize->add_section('mm_section_us', array(
+        'title' =>__('Section Images', 'mminfotech'),
         'description' => 'You can change your "About Us" section from here'
     ));
 
-    // Section Image
+    // About Us Section Image
     $wp_customize->add_setting('about_us_section_image', array(
         'default' => get_bloginfo('template_directory').'/img/about.jpg',
     ));
 
     $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'about_us_section_image', array(
-        'label' => 'Section Image',
+        'label' => 'About Us Section Image',
         'setting' => 'about_us_section_image',
-        'section' => 'mm_about_us'
+        'section' => 'mm_section_us'
     )));
 
-    // Section Title
-    $wp_customize->add_setting('about_us_section_title', array(
-        'default' => 'ABOUT US',
+    // Skill Section Image
+    $wp_customize->add_setting('skill_section_image', array(
+        'default' => get_bloginfo('template_directory').'/img/about.jpg',
     ));
 
-    $wp_customize->add_control('about_us_section_title', array(
-        'label' => 'Section Title',
-        'setting' => 'about_us_section_title',
-        'section' => 'mm_about_us',
-    ));
-
-    // Sectuib Sub Title
-    $wp_customize->add_setting('about_us_section_sub_title', array(
-        'default' => '#1 Digital Solution With 10 Years Of Experience',
-    ));
-
-    $wp_customize->add_control('about_us_section_sub_title', array(
-        'label' => 'Section Sub Title',
-        'setting' => 'about_us_section_sub_title',
-        'section' => 'mm_about_us',
-    ));
-
-    // Section Paragraph 1
-    $wp_customize->add_setting('about_us_section_paragraph_1', array(
-        'default' => 'Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet',
-    ));
-
-    $wp_customize->add_control('about_us_section_paragraph_1', array(
-        'label' => 'Section Paragraph 1',
-        'setting' => 'about_us_section_paragraph_1',
-        'section' => 'mm_about_us',
-    ));
-
-    // Section Paragraph 2
-    $wp_customize->add_setting('about_us_section_paragraph_2', array(
-        'default' => 'Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.',
-    ));
-
-    $wp_customize->add_control('about_us_section_paragraph_2', array(
-        'label' => 'Section Paragraph 2',
-        'setting' => 'about_us_section_paragraph_2',
-        'section' => 'mm_about_us',
-    ));
-
-    // Site Owner Name
-    $wp_customize->add_setting('about_us_section_owner_name', array(
-        'default' => 'Jhon Doe',
-    ));
-
-    $wp_customize->add_control('about_us_section_owner_name', array(
-        'label' => 'Site Owner Name',
-        'setting' => 'about_us_section_owner_name',
-        'section' => 'mm_about_us',
-    ));
-
-    // 2Site Owner Designation
-    $wp_customize->add_setting('about_us_section_owner_designation', array(
-        'default' => 'CEO & Founder',
-    ));
-
-    $wp_customize->add_control('about_us_section_owner_designation', array(
-        'label' => 'Designation',
-        'setting' => 'about_us_section_owner_designation',
-        'section' => 'mm_about_us',
-    ));
-
-    // Button Name
-    $wp_customize->add_setting('about_us_section_button_name', array(
-        'default' => 'Read More',
-    ));
-
-    $wp_customize->add_control('about_us_section_button_name', array(
-        'label' => 'Button Name',
-        'setting' => 'about_us_section_button_name',
-        'section' => 'mm_about_us',
-    ));
-
-    // Button Link
-    $wp_customize->add_setting('about_us_section_button_link', array(
-        'default' => 'https://facebook.com/bccshohel',
-    ));
-
-    $wp_customize->add_control('about_us_section_button_link', array(
-        'label' => 'Button Link',
-        'setting' => 'about_us_section_button_link',
-        'section' => 'mm_about_us',
-    ));
+    // $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'skill_section_image', array(
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'skill_section_image', array(
+        'label' => 'Skill Section Image',
+        'description' => 'Upload a section image width 40px and height 30px',
+        'setting' => 'skill_section_image',
+        'section' => 'mm_section_us'
+    )));
 }
 add_action('customize_register', 'header_area_register');
 
