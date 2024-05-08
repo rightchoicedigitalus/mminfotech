@@ -12,5 +12,8 @@ include_once('inc/custom_post.php');
 // Theme Function
 include_once('inc/theme_function.php');
 
+// Theme Function
+include_once('inc/theme_options/admin_theme_options.php');
+
 // Register Nav Menu
 register_nav_menu('primary', __('Primary Menu', 'mminfotech'));
