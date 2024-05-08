@@ -81,7 +81,7 @@
             ?>
 
                 <div class="carousel-item active">
-                    <img src="<?php the_post_thumbnail_url('slider');?>" alt="">
+                    <?php echo the_post_thumbnail('slider'); ?>
                     <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-4 animated zoomIn"><?php the_title(); ?></h4>
@@ -157,23 +157,23 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="img-border">
-                        <img class="img-fluid" src="<?php echo get_theme_mod('about_us_section_image')?>" alt="">
+                        <img class="img-fluid" src="img/about.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="h-100">
-                        <h6 class="section-title bg-white text-start text-primary pe-3"><?php echo get_theme_mod('about_us_section_title')?></h6>
-                        <h1 class="display-6 mb-4"><?php echo get_theme_mod('about_us_section_sub_title')?></h1>
-                        <p><?php echo get_theme_mod('about_us_section_paragraph_1')?></p>
-                        <p class="mb-4"><?php echo get_theme_mod('about_us_section_paragraph_2')?></p>
+                        <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                        <h1 class="display-6 mb-4">#1 Digital Solution With <span class="text-primary">10 Years</span> Of Experience</h1>
+                        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                        <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p>
                         <div class="d-flex align-items-center mb-4 pb-2">
-                            <img class="flex-shrink-0 rounded-circle" src="<?php echo get_theme_mod('about_us_section_image')?>" alt="" style="width: 50px; height: 50px;">
+                            <img class="flex-shrink-0 rounded-circle" src="img/team-1.jpg" alt="" style="width: 50px; height: 50px;">
                             <div class="ps-4">
-                                <h6><?php echo get_theme_mod('about_us_section_owner_name')?></h6>
-                                <small><?php echo get_theme_mod('about_us_section_owner_designation')?></small>
+                                <h6>Jhon Doe</h6>
+                                <small>SEO & Founder</small>
                             </div>
                         </div>
-                        <a class="btn btn-primary rounded-pill py-3 px-5" href="<?php echo get_theme_mod('about_us_section_button_link')?>"><?php echo get_theme_mod('about_us_section_button_name')?></a>
+                        <a class="btn btn-primary rounded-pill py-3 px-5" href="">Read More</a>
                     </div>
                 </div>
             </div>
