@@ -43,6 +43,21 @@
   height: auto;
 }
 
+.footer .child_footer h2 {
+  font-size: 22px;
+}
+.footer .child_footer h2, .footer .child_footer p, .footer .child_footer a {
+  color: var(--light);
+  text-decoration: none;
+}
+.footer .child_footer ul {
+  padding: 0;
+  list-style: none;
+}
+.footer .child_footer ul li {
+  color: var(--light);
+}
+
 @media (max-width: 767.98px) {
   #callToAction .left, #callToAction .inner_right {
     justify-content: center !important;

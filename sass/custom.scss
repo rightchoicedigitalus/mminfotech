@@ -57,6 +57,26 @@
     }
 }
 
+// Footer
+.footer {
+    .child_footer {
+        h2 {
+            font-size: 22px;
+        }
+        h2,p,a {
+            color: var(--light);
+            text-decoration: none;
+        }
+        ul {
+            padding: 0;
+            list-style: none;
+            li {
+                color: var(--light);
+            }
+        }
+    }
+}
+
 
 // =========================================================
 // ====================== Responsive =======================

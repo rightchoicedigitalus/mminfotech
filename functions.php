@@ -12,6 +12,9 @@ include_once('inc/custom_post.php');
 // Theme Function
 include_once('inc/theme_function.php');
 
+// Widgets Register
+include_once('inc/widgets_register.php');
+
 // Theme Function
 include_once('inc/theme_options/admin_theme_options.php');
 
