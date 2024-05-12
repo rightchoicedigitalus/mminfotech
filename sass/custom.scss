@@ -64,7 +64,7 @@
             font-size: 22px;
         }
         h2,p,a {
-            color: var(--light);
+            color: var(--light) !important;
             text-decoration: none;
         }
         ul {

@@ -47,7 +47,7 @@
   font-size: 22px;
 }
 .footer .child_footer h2, .footer .child_footer p, .footer .child_footer a {
-  color: var(--light);
+  color: var(--light) !important;
   text-decoration: none;
 }
 .footer .child_footer ul {
