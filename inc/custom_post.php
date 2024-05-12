@@ -64,3 +64,36 @@ function custom_service(){
 
 }
 add_action('init', 'custom_service');
+
+
+// Custom Skills
+function custom_skills(){
+  register_post_type ('skills',
+    array(
+      'labels' => array(
+        'name' => ('skills'),
+        'singular_name' => ('Skill'),
+        'add_new' => ('Add New Skill'),
+        'add_new_item' => ('Add New Skill'),
+        'edit_item' => ('Edit Skill'),
+        'new_item' => ('New Skill'),
+        'view_item' => ('View Skill'),
+        'not_found' => ('Sorry, we cound\'n find the Skill you are looking for.'),
+      ),
+      'menu_icon' => 'dashicons-image-filter',
+      'public' => true,
+      'publicly_queryable' => true,
+      'exclude_from_search' => true,
+      'menu_position' => 11, 
+      'has_archive' => true,
+      'hierarchial' => true,
+      'show_ui' => true,
+      'capability_type' => 'post',
+      'rewrite' => array('slag' => 'skill'),
+      'supports' => array('title', 'thumbnail', 'editor', 'excerpt'),
+      )
+    );
+    add_theme_support('post-thumbnails');
+
+}
+add_action('init', 'custom_skills');

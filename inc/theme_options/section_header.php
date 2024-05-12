@@ -2,7 +2,9 @@
  echo '<h1>Section Header</h1>';
 ?>
 
-<!-- About Us Section -->
+<div class="main_body">
+
+    <!-- About Us Section -->
 <div id="aboutUs">
     <div class="container">
         <div class="card">
@@ -92,6 +94,45 @@
         </div>
     </div>
 </div>
+
+<!-- Skills Section -->
+<div id="skills">
+    <div class="container">
+        <div class="card">
+            <h2>Skills Section</h2>
+
+            <form action="options.php" method="post">
+                <?php wp_nonce_field('update-options'); ?>
+                <div class="form_group">
+                    <label for="skills_section_name" style="display: block">Section Title</label>
+                    <input type="text" id="skills_section_name" style="width: 100%" name="skills_section_name" placeholder="Enter your section name" value="<?php echo get_option('skills_section_name'); ?>">
+                </div>
+
+                <div class="form_group">
+                    <label for="skills_section_sub_title" style="display: block; margin-top: 10px">Section Sub Title</label>
+                    <input type="text" id="skills_section_sub_title" style="width: 100%" name="skills_section_sub_title" placeholder="Enter section sub-title" value="<?php echo get_option('skills_section_sub_title'); ?>">
+                </div>
+
+                <div class="form_group">
+                    <label for="section_paragraph" style="display: block; margin-top: 10px">Section Paragraph</label>
+                    <textarea name="section_paragraph" style="width: 100%" id="section_paragraph"  rows="5"><?php echo get_option('section_paragraph'); ?></textarea>
+                </div>
+
+                
+
+                <input type="hidden" name="action" value="update">
+                <input type="hidden" name="page_options" value="skills_section_name, skills_section_sub_title, section_paragraph">
+
+
+                <input type="submit" style="margin-top: 10px" name="submit" value="<?php _e('Save Changes', 'mminfotech'); ?>">
+            </form>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
 <?php
 
 ?>
